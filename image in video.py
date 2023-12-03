@@ -4,11 +4,11 @@ import cv2
 image_detection = cv2.CascadeClassifier('haarcascade_frontalface_default.xml')
 
 # Open the video file
-cap = cv2.VideoCapture('video.mp4')
+vid = cv2.VideoCapture('video.mp4')
 
 while True:
     # Read the next frame
-    ret, frame = cap.read()
+    ret, frame = vid.read()
     
     if not ret:
         break
@@ -31,5 +31,5 @@ while True:
         break
 
 # Release the video capture object and close all windows
-cap.release()
+vid.release()
 cv2.destroyAllWindows()
