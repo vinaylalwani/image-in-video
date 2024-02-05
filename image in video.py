@@ -1,7 +1,7 @@
 import cv2
 
 # Load the pre-trained model
-image_detection = cv2.CascadeClassifier('haarcascade_frontalface_default.xml')
+image_detection = cv2.CascadeClassifier('xmlfile.xml')
 
 # Open the video file
 vid = cv2.VideoCapture('video.mp4')
